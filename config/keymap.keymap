@@ -85,6 +85,20 @@
             bindings = <&kp LANGUAGE_1 &kp O &kp T &kp S &kp U &kp K &kp A &kp R &kp E &kp S &kp A &kp M &kp A &kp D &kp E &kp S &kp I &kp T &kp A &kp DOT &kp T &kp A &kp I &kp K &kp I &kp N &kp N &kp S &kp I &kp M &kp A &kp S &kp U &kp DOT &kp SPACE &kp ENTER>;
             label = "END";
         };
+
+        Rest: Rest {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_1 &kp O &kp H &kp I &kp R &kp U &kp K &kp Y &kp U &kp U &kp K &kp E &kp I &kp I &kp T &kp A &kp D &kp A &kp K &kp I &kp M &kp A &kp S &kp U &kp DOT &kp SPACE &kp ENTER>;
+            label = "REST";
+        };
+
+        Back: Back {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_1 &kp M &kp O &kp D &kp O &kp R &kp I &kp M &kp A &kp S &kp I &kp T &kp A &kp DOT &kp SPACE &kp ENTER>;
+            label = "BACK";
+        };
     };
 
     keymap {
@@ -143,7 +157,7 @@
         layer_5 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans                                     &trans                &trans             &trans           &trans      &trans
-&trans  &Start  &End    &trans  &trans  &trans                  &kp C_BRIGHTNESS_DEC                       &kp C_BRIGHTNESS_INC  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp K_MUTE  &trans
+&trans  &Start  &End    &Rest   &Back   &trans                  &kp C_BRIGHTNESS_DEC                       &kp C_BRIGHTNESS_INC  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp K_MUTE  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &kp LC(UP_ARROW)                           &kp F11               &trans             &kp LA(SPACE)    &trans      &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &HoldOrTap LG(RIGHT_ARROW) LG(LEFT_ARROW)  &trans                &trans             &trans           &trans      &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                                     &trans                &trans             &trans           &trans      &trans

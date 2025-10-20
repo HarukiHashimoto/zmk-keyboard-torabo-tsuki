@@ -71,11 +71,11 @@
 
         layer_2 {
             bindings = <
-&trans  &trans     &trans          &trans      &trans    &trans                     &trans        &trans          &trans     &trans                                 &trans             &trans
-&trans  &kp EXCL   &kp AT          &kp HASH    &kp AMPS  &kp PRCNT                  &kp CARET     &kp AMPS        &kp ASTRK  &kp LPAR                               &kp RPAR           &trans
-&trans  &kp N1     &kp N2          &kp N3      &kp N4    &kp N5                     &kp KP_PLUS   &kp KP_MINUS    &kp COLON  &kp LEFT_BRACE                         &kp RIGHT_BRACE    &trans
-&trans  &kp N6     &kp N7          &kp N8      &kp N9    &kp N0     &trans  &trans  &kp KP_EQUAL  &kp UNDERSCORE  &kp PIPE   &HoldOrTap RIGHT_BRACKET LEFT_BRACKET  &kp RIGHT_BRACKET  &kp RIGHT_SHIFT
-&trans  &kp RCTRL  &kp APOSTROPHE  &kp DOLLAR  &trans    &trans     &trans  &trans  &trans        &trans          &trans     &trans                                 &trans             &trans
+&trans  &trans     &trans          &trans      &trans    &trans                     &trans        &trans          &trans     &trans          &trans             &trans
+&trans  &kp EXCL   &kp AT          &kp HASH    &kp AMPS  &kp PRCNT                  &kp CARET     &kp AMPS        &kp ASTRK  &kp LPAR        &kp RPAR           &trans
+&trans  &kp N1     &kp N2          &kp N3      &kp N4    &kp N5                     &kp KP_PLUS   &kp KP_MINUS    &kp COLON  &kp LEFT_BRACE  &kp RIGHT_BRACE    &trans
+&trans  &kp N6     &kp N7          &kp N8      &kp N9    &kp N0     &trans  &trans  &kp KP_EQUAL  &kp UNDERSCORE  &kp PIPE   &BracketsMacro  &kp RIGHT_BRACKET  &kp RIGHT_SHIFT
+&trans  &kp RCTRL  &kp APOSTROPHE  &kp DOLLAR  &trans    &trans     &trans  &trans  &trans        &trans          &trans     &trans          &trans             &trans
             >;
         };
 

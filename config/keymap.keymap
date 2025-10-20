@@ -136,11 +136,11 @@
 
         layer_3 {
             bindings = <
-&trans  &trans        &trans          &trans          &trans           &trans                     &trans  &trans    &trans    &trans    &trans  &trans
-&trans  &kp NUMBER_6  &kp PAGE_DOWN   &kp UP_ARROW    &kp PAGE_UP      &kp LC(T)                  &trans  &trans    &trans    &trans    &trans  &trans
-&trans  &kp NUMBER_7  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans                     &trans  &mkp MB1  &mo 5     &mkp MB2  &trans  &trans
-&trans  &kp NUMBER_8  &kp J           &kp K           &kp L            &trans     &trans  &trans  &trans  &trans    &mkp MB3  &trans    &trans  &trans
-&trans  &trans        &trans          &trans          &trans           &trans     &trans  &trans  &trans  &trans    &trans    &trans    &trans  &trans
+&trans  &trans        &trans         &trans    &trans       &trans                     &trans  &trans    &trans    &trans    &trans  &trans
+&trans  &kp NUMBER_6  &kp PAGE_DOWN  &kp UP    &kp PAGE_UP  &kp LC(T)                  &trans  &trans    &trans    &trans    &trans  &trans
+&trans  &kp NUMBER_7  &kp LEFT       &kp DOWN  &kp RIGHT    &trans                     &trans  &mkp MB1  &mo 5     &mkp MB2  &trans  &trans
+&trans  &kp NUMBER_8  &kp J          &kp K     &kp L        &trans     &trans  &trans  &trans  &trans    &mkp MB3  &trans    &trans  &trans
+&trans  &trans        &trans         &trans    &trans       &trans     &trans  &trans  &trans  &trans    &trans    &trans    &trans  &trans
             >;
         };
 
@@ -156,11 +156,11 @@
 
         layer_5 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans                                     &trans                &trans             &trans           &trans      &trans
-&trans  &Start  &End    &Rest   &Back   &trans                  &kp C_BRIGHTNESS_DEC                       &kp C_BRIGHTNESS_INC  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp K_MUTE  &bootloader
-&trans  &trans  &trans  &trans  &trans  &trans                  &kp LC(UP_ARROW)                           &kp F11               &trans             &kp LA(SPACE)    &trans      &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &HoldOrTap LG(RIGHT_ARROW) LG(LEFT_ARROW)  &trans                &trans             &trans           &trans      &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                                     &trans                &trans             &trans           &trans      &trans
+&trans                &trans  &trans  &trans  &trans  &trans                  &trans                                     &trans                &trans             &trans           &trans      &trans
+&trans                &Start  &End    &Rest   &Back   &trans                  &kp C_BRIGHTNESS_DEC                       &kp C_BRIGHTNESS_INC  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp K_MUTE  &bootloader
+&kp LS(LG(NUMBER_5))  &trans  &trans  &trans  &trans  &trans                  &kp LC(UP_ARROW)                           &kp F11               &trans             &kp LA(SPACE)    &trans      &trans
+&kp LS(LG(NUMBER_4))  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &HoldOrTap LG(RIGHT_ARROW) LG(LEFT_ARROW)  &trans                &trans             &trans           &trans      &trans
+&kp LS(LG(NUMBER_3))  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                                     &trans                &trans             &trans           &trans      &trans
             >;
         };
 

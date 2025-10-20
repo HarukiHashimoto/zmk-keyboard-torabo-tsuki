@@ -15,15 +15,12 @@
     };
 
     behaviors {
-        Brackets: Brackets {
+        Brackets1: Brackets1 {
             compatible = "zmk,behavior-tap-dance";
-            label = "BRACKETS";
+            label = "BRACKETS1";
             #binding-cells = <0>;
-            bindings =
-                <&HoldOrTap RIGHT_BRACKET LEFT_BRACKET>,
-                <&BracketsMacro>;
-
-            tapping-term-ms = <100>;
+            bindings = <&HoldOrTap RIGHT_BRACKET LEFT_BRACKET>;
+            tapping-term-ms = <120>;
         };
 
         HoldOrTap: HoldOrTap {
@@ -32,7 +29,7 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <120>;
             hold-trigger-on-release;
         };
 
@@ -40,9 +37,16 @@
             compatible = "zmk,behavior-tap-dance";
             label = "BRACKETS2";
             #binding-cells = <0>;
-            bindings = <&HoldOrTap RIGHT_BRACE LEFT_BRACE>, <&BracketsMacro2>;
+            bindings = <&HoldOrTap RIGHT_BRACE LEFT_BRACE>;
+            tapping-term-ms = <120>;
+        };
 
-            tapping-term-ms = <100>;
+        Brackets3: Brackets3 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "BRACKETS3";
+            #binding-cells = <0>;
+            bindings = <&HoldOrTap GREATER_THAN LESS_THAN>;
+            tapping-term-ms = <120>;
         };
     };
 
@@ -59,6 +63,13 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_BRACE &kp RIGHT_BRACE &kp LEFT>;
             label = "BRACKETSMACRO2";
+        };
+
+        BracketsMacro3: Brackets3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LESS_THAN &kp GREATER_THAN &kp LEFT>;
+            label = "BRACKETS3";
         };
     };
 
@@ -87,21 +98,21 @@
 
         layer_2 {
             bindings = <
-&trans  &trans     &trans          &trans      &trans    &trans                     &trans        &trans          &trans     &trans      &trans             &trans
-&trans  &kp EXCL   &kp AT          &kp HASH    &kp AMPS  &kp PRCNT                  &kp CARET     &kp AMPS        &kp ASTRK  &kp LPAR    &kp RPAR           &trans
-&trans  &kp N1     &kp N2          &kp N3      &kp N4    &kp N5                     &kp KP_PLUS   &kp KP_MINUS    &kp COLON  &Brackets2  &kp RIGHT_BRACE    &trans
-&trans  &kp N6     &kp N7          &kp N8      &kp N9    &kp N0     &trans  &trans  &kp KP_EQUAL  &kp UNDERSCORE  &kp PIPE   &Brackets   &kp RIGHT_BRACKET  &kp RIGHT_SHIFT
-&trans  &kp RCTRL  &kp APOSTROPHE  &kp DOLLAR  &trans    &trans     &trans  &trans  &trans        &trans          &trans     &trans      &trans             &trans
+&trans  &trans     &trans          &trans      &trans    &trans                     &trans        &trans          &trans     &trans      &trans      &trans
+&trans  &kp EXCL   &kp AT          &kp HASH    &kp AMPS  &kp PRCNT                  &kp CARET     &kp AMPS        &kp ASTRK  &kp LPAR    &kp RPAR    &trans
+&trans  &kp N1     &kp N2          &kp N3      &kp N4    &kp N5                     &kp KP_PLUS   &kp KP_MINUS    &kp COLON  &Brackets2  &trans      &trans
+&trans  &kp N6     &kp N7          &kp N8      &kp N9    &kp N0     &trans  &trans  &kp KP_EQUAL  &kp UNDERSCORE  &kp PIPE   &Brackets1  &Brackets3  &kp RIGHT_SHIFT
+&trans  &kp RCTRL  &kp APOSTROPHE  &kp DOLLAR  &trans    &trans     &trans  &trans  &trans        &trans          &trans     &trans      &trans      &trans
             >;
         };
 
         layer_3 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans    &trans  &trans    &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans    &trans  &trans    &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &mkp MB1  &mo 5   &mkp MB2  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans  &trans
+&trans  &trans        &trans          &trans          &trans           &trans                     &trans  &trans    &trans  &trans    &trans  &trans
+&trans  &kp NUMBER_6  &kp PAGE_DOWN   &kp UP_ARROW    &kp PAGE_UP      &kp LC(T)                  &trans  &trans    &trans  &trans    &trans  &trans
+&trans  &kp NUMBER_7  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans                     &trans  &mkp MB1  &mo 5   &mkp MB2  &trans  &trans
+&trans  &kp NUMBER_8  &kp J           &kp K           &kp L            &trans     &trans  &trans  &trans  &trans    &trans  &trans    &trans  &trans
+&trans  &trans        &trans          &trans          &trans           &trans     &trans  &trans  &trans  &trans    &trans  &trans    &trans  &trans
             >;
         };
 

@@ -146,18 +146,18 @@
 
         layer_4 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans       &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &sys_reset  &bootloader  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans       &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp MB1    &mkp MB2     &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans       &trans  &trans  &trans  &trans
+&trans  &trans            &trans            &trans            &trans            &trans                            &trans      &trans       &trans  &trans  &trans  &trans
+&trans  &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)  &kp LC(NUMBER_5)                  &sys_reset  &bootloader  &trans  &trans  &trans  &trans
+&trans  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(NUMBER_5)                  &trans      &trans       &trans  &trans  &trans  &trans
+&trans  &kp LA(NUMBER_1)  &kp LA(NUMBER_2)  &kp LA(NUMBER_3)  &trans            &bootloader       &trans  &trans  &mkp MB1    &mkp MB2     &trans  &trans  &trans  &trans
+&trans  &trans            &trans            &trans            &trans            &trans            &trans  &trans  &trans      &trans       &trans  &trans  &trans  &trans
             >;
         };
 
         layer_5 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans                                     &trans                &trans             &trans           &trans      &trans
-&trans  &Start  &End    &Rest   &Back   &trans                  &kp C_BRIGHTNESS_DEC                       &kp C_BRIGHTNESS_INC  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp K_MUTE  &trans
+&trans  &Start  &End    &Rest   &Back   &trans                  &kp C_BRIGHTNESS_DEC                       &kp C_BRIGHTNESS_INC  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp K_MUTE  &bootloader
 &trans  &trans  &trans  &trans  &trans  &trans                  &kp LC(UP_ARROW)                           &kp F11               &trans             &kp LA(SPACE)    &trans      &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &HoldOrTap LG(RIGHT_ARROW) LG(LEFT_ARROW)  &trans                &trans             &trans           &trans      &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                                     &trans                &trans             &trans           &trans      &trans

@@ -142,11 +142,11 @@
 
         layer_5 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans                &trans                &trans             &trans           &trans      &trans
-&trans  &Start  &End    &trans  &trans  &trans                  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp K_MUTE  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &kp LC(UP_ARROW)      &kp F11               &trans             &kp LA(SPACE)    &trans      &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                &trans                &trans             &trans           &trans      &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                &trans                &trans             &trans           &trans      &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans                                     &trans                &trans             &trans           &trans      &trans
+&trans  &Start  &End    &trans  &trans  &trans                  &kp C_BRIGHTNESS_DEC                       &kp C_BRIGHTNESS_INC  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp K_MUTE  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &kp LC(UP_ARROW)                           &kp F11               &trans             &kp LA(SPACE)    &trans      &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &HoldOrTap LG(RIGHT_ARROW) LG(LEFT_ARROW)  &trans                &trans             &trans           &trans      &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                                     &trans                &trans             &trans           &trans      &trans
             >;
         };
 

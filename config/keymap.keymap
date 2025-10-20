@@ -36,6 +36,13 @@
             bindings = <&kp LESS_THAN &kp GREATER_THAN &kp LEFT>;
             label = "BRACKETS3";
         };
+
+        StartingWork: StartingWork {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_2>;
+            label = "STARTINGWORK";
+        };
     };
 
     keymap {

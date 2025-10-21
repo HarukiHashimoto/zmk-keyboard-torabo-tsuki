@@ -22,12 +22,6 @@ config ZMK_MOUSE
 config PMW3610
     default y
 
-config BT_BAS
-    default y
-
-config ZMK_BATTERY_REPORTING
-    default y
-
 config ZMK_SPLIT_BLE_CENTRAL_BATTERY_LEVEL_FETCHING
     default y
 

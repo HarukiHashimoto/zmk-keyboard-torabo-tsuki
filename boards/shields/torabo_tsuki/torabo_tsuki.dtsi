@@ -84,9 +84,14 @@
         compatible = "zmk,cdc-acm-bootloader-trigger";
     };
 
+
+
+
     trackball_listener: trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
+
+        input-processors = <&zip_temp_layer 1 10000>;
     };
 
     vbatt: vbatt {
@@ -160,4 +165,11 @@
         scroll-layers = <5>;
         // automouse-layer = <1>;
     };
+};
+
+&zip_temp_layer {
+    excluded-positions = <
+        31 32 33 46 36 54
+    >;
+    require-prior-idle-ms = <200>;
 };

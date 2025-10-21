@@ -1,7 +1,6 @@
 #include "torabo_tsuki.dtsi"
 #include <input/processors.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
-#include <behaviors/input_gestures_accel.dtsi>
 
 &size_s_transform {
     col-offset = <7>;
@@ -15,25 +14,10 @@
     col-offset = <7>;
 };
 
-&pointer_accel {
-    input-type = <INPUT_EV_REL>;
-    codes = <INPUT_REL_X INPUT_REL_Y>;
-};
-
-
 &trackball_listener {
     input-processors = <
         &zip_temp_layer 1 3000
     >;
-    
-    scroller {
-        layers = <5>;
-        input-processors = <
-            &zip_xy_to_scroll_mapper
-            &zip_scroll_transform INPUT_TRANSFORM_Y_INVERT
-            &pointer_accel
-        >;
-    };
 };
 
 &zip_temp_layer {

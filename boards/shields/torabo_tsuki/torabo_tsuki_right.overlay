@@ -16,6 +16,7 @@
 
 &trackball_listener {
     input-processors = <
+        &zip_accel_simple
         &zip_temp_layer 1 3000
     >;
     
@@ -24,7 +25,6 @@
         input-processors = <
             &zip_xy_to_scroll_mapper
             &zip_scroll_transform INPUT_TRANSFORM_Y_INVERT
-            &zip_scroll_scaler 1 5
         >;
     };
 };

@@ -4,6 +4,8 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: sekigon-gonnoc
       url-base: https://github.com/sekigon-gonnoc
+    - name: nuovotaka
+      url-base: https://github.com/nuovotaka
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -26,5 +28,8 @@ manifest:
     - name: zmk-pmw3610-driver
       remote: sekigon-gonnoc
       revision: torabo-tsuki
+    - name: zmk-pointing-acceleration-alpha
+      remote: nuovotaka
+      revision: main
   self:
     path: config

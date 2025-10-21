@@ -19,3 +19,16 @@
         &zip_temp_layer 1 10000
     >;
 };
+
+&zip_temp_layer {
+    excluded-positions = <
+        31 // J
+        32 // K
+        33 // L
+        46 // <
+        36 // LEFT_SHIFT
+        54 // LEFT_GUI
+    >;
+
+    require-prior-idle-ms = <200>;
+};

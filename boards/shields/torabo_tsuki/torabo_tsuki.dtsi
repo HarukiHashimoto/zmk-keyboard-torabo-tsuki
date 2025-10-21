@@ -1,6 +1,5 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include "torabo_tsuki_layouts.dtsi"
-#include <behaviors/input_gestures_accel.dtsi>
 
 / {
     chosen {
@@ -161,9 +160,4 @@
         // scroll-layers = <5>;
         // automouse-layer = <1>;
     };
-};
-
-&pointer_accel {
-    input-type = <INPUT_EV_REL>;
-    codes = <INPUT_REL_X INPUT_REL_Y>;
 };

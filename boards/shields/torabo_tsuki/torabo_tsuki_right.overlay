@@ -41,3 +41,11 @@
 
     require-prior-idle-ms = <200>;
 };
+
+/ {
+    tpad0: tpad0 {
+        compatible = "zmk,input-listener";
+        device = <&glidepoint>;
+        input-processors = <&pointer_accel>;
+    };
+};

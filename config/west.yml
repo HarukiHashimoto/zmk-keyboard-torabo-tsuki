@@ -28,6 +28,8 @@ manifest:
     - name: zmk-pmw3610-driver
       remote: sekigon-gonnoc
       revision: torabo-tsuki
+    - name: zmk-feature-non-lipo-battery-management
+      remote: sekigon-gonnoc
     - name: zmk-pointing-acceleration-alpha
       remote: nuovotaka
       revision: main

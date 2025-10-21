@@ -32,3 +32,14 @@
 
     require-prior-idle-ms = <200>;
 };
+
+/ {
+    chosen {
+        zmk,battery = &non_lipo_battery;
+    };
+
+    non_lipo_battery: non_lipo_battery {
+        compatible = "zmk,non-lipo-battery";
+        io-channels = <&adc 2>;  // 使用するADCチャンネル
+    };
+};

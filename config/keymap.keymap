@@ -112,7 +112,7 @@
         Taikin2: Taikin2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp O &kp T &kp U &kp K &kp A &kp R &kp E &kp S &kp A &kp M &kp A &kp D &kp E &kp S &kp I &kp T &kp A &kp DOT &kp SPACE &kp SPACE &kp RET>;
+            bindings = <&kp O &kp T &kp U &kp K &kp A &kp R &kp E &kp S &kp A &kp M &kp A &kp D &kp E &kp S &kp I &kp T &kp A &kp DOT &kp SPACE &kp RET>;
             label = "TAIKIN2";
         };
 

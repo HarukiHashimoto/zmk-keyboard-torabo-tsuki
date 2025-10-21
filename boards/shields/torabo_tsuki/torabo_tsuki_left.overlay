@@ -18,8 +18,7 @@
 &trackball_listener {
     input-processors = <
         &zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)
-        &scaler 1 5 4  // X軸: 4/5倍
-        &scaler 2 5 4  // Y軸: 4/5倍
+        &zip_scroll_scaler 5 4  // 4/5倍
         &zip_temp_layer 1 10000
     >;
 };

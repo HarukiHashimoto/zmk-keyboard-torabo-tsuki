@@ -22,15 +22,6 @@ config ZMK_MOUSE
 config PMW3610
     default y
 
-config ZMK_SPLIT_BLE_CENTRAL_BATTERY_LEVEL_FETCHING
-    default y
-
-config ZMK_SPLIT_BLE_CENTRAL_BATTERY_LEVEL_PROXY
-    default y
-
-config ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS
-    default 1
-
 config ZMK_NON_LIPO_MIN_MV
     default 2000
 

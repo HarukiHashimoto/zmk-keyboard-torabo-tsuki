@@ -18,6 +18,14 @@
     input-processors = <
         &zip_temp_layer 1 3000
     >;
+    
+    scroller {
+        layers = <5>;
+        input-processors = <
+            &zip_xy_to_scroll_mapper
+            &zip_scroll_scaler 4 5
+        >;
+    }
 };
 
 &zip_temp_layer {

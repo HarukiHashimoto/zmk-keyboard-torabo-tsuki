@@ -96,7 +96,7 @@
         End: End {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LANGUAGE_1 &kp O &kp T &kp S &kp U &kp K &kp A &kp R &kp E &kp S &kp A &kp M &kp A &kp D &kp E &kp S &kp I &kp T &kp A &kp DOT &kp T &kp A &kp I &kp K &kp I &kp N &kp N &kp S &kp I &kp M &kp A &kp S &kp U &kp DOT &kp SPACE &kp ENTER>;
+            bindings = <&kp LANGUAGE_1 &kp T &kp A &kp I &kp K &kp I &kp N &kp S &kp I &kp M &kp A &kp S &kp U &kp DOT &kp O &kp T &kp S &kp U &kp K &kp A &kp R &kp E &kp S &kp A &kp M &kp A &kp D &kp E &kp S &kp I &kp T &kp A &kp DOT &kp SPACE &kp ENTER>;
             label = "END";
         };
     };
